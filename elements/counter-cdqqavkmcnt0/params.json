@@ -61,16 +61,16 @@
       "doc": "Only apply if Value as JSON is true. Set the field in each JSON object to use as ID.",
       "editor": "DynamicValue",
       "name": "jsonIDField",
-      "rank": 5,
-      "value": "text"
+      "value": "text",
+      "rank": 5
     },
     "ABp": {
       "caption": "JSON Label Field",
       "doc": "Only apply if Value as JSON is true. Set the field in each JSON object to use as Label.",
       "editor": "DynamicValue",
       "name": "jsonLabelField",
-      "rank": 6,
-      "value": "text"
+      "value": "text",
+      "rank": 6
     },
     "ABm": {
       "caption": "𝗩𝗔𝗟𝗨𝗘",
@@ -83,8 +83,18 @@
       "editor": "DynamicValue",
       "is_list": true,
       "name": "options",
-      "rank": 8,
-      "value": "custom_data_AAT"
+      "value": "custom_data_AAT",
+      "rank": 8
+    },
+    "asyncOptionFetching": {
+      "caption": "Async Options Fetching",
+      "doc": "If enabled, you can provide options based on the inputValue of the dropdown box",
+      "default_val": false,
+      "editor": "Checkbox",
+      "name": "asyncOptionFetching",
+      "optional": true,
+      "value": "boolean",
+      "rank": 9
     },
     "AAb": {
       "caption": "Default Values",
@@ -92,29 +102,29 @@
       "is_list": true,
       "name": "defaultValues",
       "optional": true,
-      "rank": 9,
-      "value": "custom_data_AAT"
+      "value": "custom_data_AAT",
+      "rank": 10
     },
     "ABl": {
       "caption": "𝗖𝗢𝗡𝗙𝗜𝗚",
       "editor": "Label",
       "name": "config",
-      "rank": 10
+      "rank": 11
     },
     "AAS": {
       "caption": "Max Item Show",
       "default_val": -1,
       "editor": "DynamicValue",
       "name": "maxItemShow",
-      "rank": 11,
-      "value": "number"
+      "value": "number",
+      "rank": 12
     },
     "ABV": {
       "caption": "Allow Create new option",
       "default_val": false,
       "editor": "Checkbox",
       "name": "allowCreate",
-      "rank": 12
+      "rank": 13
     },
     "AAj": {
       "caption": "Hide Selected",
@@ -124,16 +134,16 @@
       "in_style": true,
       "name": "hideSelected",
       "optional": true,
-      "rank": 13,
-      "value": "boolean"
+      "value": "boolean",
+      "rank": 14
     },
     "ABT": {
       "caption": "Placeholder",
       "editor": "DynamicValue",
       "name": "placeholder",
       "optional": true,
-      "rank": 14,
-      "value": "text"
+      "value": "text",
+      "rank": 15
     },
     "AAf": {
       "caption": "No option message",
@@ -142,8 +152,8 @@
       "editor": "DynamicValue",
       "name": "noOptionMsg",
       "optional": true,
-      "rank": 15,
-      "value": "text"
+      "value": "text",
+      "rank": 16
     },
     "AAg": {
       "caption": "Disabled",
@@ -151,14 +161,14 @@
       "editor": "Checkbox",
       "name": "disabled",
       "optional": true,
-      "rank": 16,
-      "value": "boolean"
+      "value": "boolean",
+      "rank": 17
     },
     "AAc": {
       "caption": "𝗦𝗧𝗬𝗟𝗘",
       "editor": "Label",
       "name": "style_caption",
-      "rank": 17
+      "rank": 18
     },
     "AAi": {
       "caption": "Max Menu Height",
@@ -167,8 +177,8 @@
       "editor": "DynamicValue",
       "name": "style_maxMenuHeight",
       "optional": true,
-      "rank": 18,
-      "value": "number"
+      "value": "number",
+      "rank": 19
     },
     "AAe": {
       "caption": "Border Radius",
@@ -176,8 +186,8 @@
       "editor": "StaticNumber",
       "in_style": true,
       "name": "style_borderRadius",
-      "rank": 19,
-      "value": "number"
+      "value": "number",
+      "rank": 20
     },
     "AAt": {
       "caption": "Primary Seed Color",
@@ -186,7 +196,7 @@
       "editor": "Color",
       "in_style": true,
       "name": "style_primaryColor",
-      "rank": 20
+      "rank": 21
     },
     "AAu": {
       "caption": "Danger Seed Color",
@@ -195,7 +205,7 @@
       "editor": "Color",
       "in_style": true,
       "name": "style_dangerColor",
-      "rank": 21
+      "rank": 22
     },
     "AAv": {
       "caption": "Neutral Color",
@@ -204,7 +214,7 @@
       "editor": "Color",
       "in_style": true,
       "name": "style_neutralColor",
-      "rank": 22
+      "rank": 23
     }
   },
   "icon": "ion-android-arrow-dropdown-circle",

@@ -62,16 +62,16 @@
       "editor": "DynamicValue",
       "name": "jsonLabelField",
       "optional": true,
-      "rank": 5,
-      "value": "text"
+      "value": "text",
+      "rank": 5
     },
     "ABg": {
       "caption": "JSON ID Field",
       "doc": "Only apply if Value as JSON is true. Set the field in each JSON object to use as ID.",
       "editor": "DynamicValue",
       "name": "jsonIDField",
-      "rank": 6,
-      "value": "text"
+      "value": "text",
+      "rank": 6
     },
     "ABj": {
       "caption": "𝗩𝗔𝗟𝗨𝗘",
@@ -84,8 +84,18 @@
       "editor": "DynamicValue",
       "is_list": true,
       "name": "options",
-      "rank": 8,
-      "value": "custom_data_ABA"
+      "value": "custom_data_ABA",
+      "rank": 8
+    },
+    "asyncOptionFetching": {
+      "caption": "Async Options Fetching",
+      "doc": "If enabled, you can provide options based on the inputValue of the dropdown box",
+      "default_val": false,
+      "editor": "Checkbox",
+      "name": "asyncOptionFetching",
+      "optional": true,
+      "value": "boolean",
+      "rank": 9
     },
     "ABE": {
       "caption": "Default Value",
@@ -94,14 +104,14 @@
       "is_list": false,
       "name": "defaultValue",
       "optional": true,
-      "rank": 9,
-      "value": "custom_data_ABA"
+      "value": "custom_data_ABA",
+      "rank": 10
     },
     "ABW": {
       "caption": "𝗖𝗢𝗡𝗙𝗜𝗚",
       "editor": "Label",
       "name": "config_section",
-      "rank": 10
+      "rank": 11
     },
     "ABI": {
       "caption": "Disabled",
@@ -109,8 +119,8 @@
       "editor": "Checkbox",
       "name": "disabled",
       "optional": true,
-      "rank": 11,
-      "value": "boolean"
+      "value": "boolean",
+      "rank": 12
     },
     "ABK": {
       "caption": "Hide Selected",
@@ -120,8 +130,8 @@
       "in_style": true,
       "name": "hideSelected",
       "optional": true,
-      "rank": 12,
-      "value": "boolean"
+      "value": "boolean",
+      "rank": 13
     },
     "ABR": {
       "caption": "Allow Create new Option",
@@ -129,21 +139,21 @@
       "doc": "Allow creation of new Option",
       "editor": "Checkbox",
       "name": "allowCreate",
-      "rank": 13
+      "rank": 14
     },
     "ABd": {
       "caption": "𝗠𝗘𝗦𝗦𝗔𝗚𝗘𝗦",
       "editor": "Label",
       "name": "messages_info",
-      "rank": 14
+      "rank": 15
     },
     "ABS": {
       "caption": "Placeholder",
       "doc": "This is the placeholder for the input element",
       "editor": "DynamicValue",
       "name": "placeholder",
-      "rank": 15,
-      "value": "text"
+      "value": "text",
+      "rank": 16
     },
     "ABH": {
       "caption": "No option message",
@@ -152,14 +162,14 @@
       "editor": "DynamicValue",
       "name": "noOptionMsg",
       "optional": true,
-      "rank": 16,
-      "value": "text"
+      "value": "text",
+      "rank": 17
     },
     "ABF": {
       "caption": "𝗦𝗧𝗬𝗟𝗘",
       "editor": "Label",
       "name": "style_section",
-      "rank": 17
+      "rank": 18
     },
     "ABJ": {
       "caption": "Max Menu Height",
@@ -168,8 +178,8 @@
       "editor": "DynamicValue",
       "name": "style_maxMenuHeight",
       "optional": true,
-      "rank": 18,
-      "value": "number"
+      "value": "number",
+      "rank": 19
     },
     "ABG": {
       "caption": "Border Radius",
@@ -177,8 +187,8 @@
       "editor": "StaticNumber",
       "in_style": true,
       "name": "style_borderRadius",
-      "rank": 19,
-      "value": "number"
+      "value": "number",
+      "rank": 20
     },
     "ABL": {
       "caption": "Primary Seed Color",
@@ -187,7 +197,7 @@
       "editor": "Color",
       "in_style": true,
       "name": "style_primaryColor",
-      "rank": 20
+      "rank": 21
     },
     "ABM": {
       "caption": "Danger Seed Color",
@@ -196,7 +206,7 @@
       "editor": "Color",
       "in_style": true,
       "name": "style_dangerColor",
-      "rank": 21
+      "rank": 22
     },
     "ABN": {
       "caption": "Neutral Seed Color",
@@ -205,7 +215,7 @@
       "editor": "Color",
       "in_style": true,
       "name": "style_neutralColor",
-      "rank": 22
+      "rank": 23
     }
   },
   "icon": "ion-android-arrow-dropdown-circle",
