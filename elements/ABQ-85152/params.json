@@ -1,241 +1,241 @@
 {
-    "add_is_visible": true,
-    "can_fit_height": true,
-    "can_fit_width": true,
-    "category": "input forms",
-    "default_dim": {
-        "height": 40,
-        "width": 300
+  "add_is_visible": true,
+  "can_fit_height": true,
+  "can_fit_width": true,
+  "category": "input forms",
+  "default_dim": {
+    "height": 40,
+    "width": 300
+  },
+  "display": "Single Select",
+  "events": {
+    "AAw": {
+      "caption": "value changed",
+      "name": "changed"
     },
-    "display": "Single Select",
-    "events": {
-        "AAw": {
-            "caption": "value changed",
-            "name": "changed"
-        },
-        "AAx": {
-            "caption": "focused",
-            "name": "focused"
-        },
-        "AAy": {
-            "caption": "create new entry",
-            "name": "createNew"
-        }
+    "AAx": {
+      "caption": "focused",
+      "name": "focused"
     },
-    "fields": {
-        "ABA": {
-            "caption": "Value Type",
-            "editor": "custom_type",
-            "name": "valueType",
-            "rank": 1
-        },
-        "ABB": {
-            "caption": "Options",
-            "editor": "DynamicValue",
-            "is_list": true,
-            "name": "options",
-            "rank": 8,
-            "value": "custom_data_ABA"
-        },
-        "ABC": {
-            "caption": "Label Field",
-            "editor": "custom_field_ABA",
-            "field_type_restriction": "text_image_file",
-            "name": "labelField",
-            "rank": 2
-        },
-        "ABE": {
-            "caption": "Default Value",
-            "doc": "Default value for the input",
-            "editor": "DynamicValue",
-            "is_list": false,
-            "name": "defaultValue",
-            "optional": true,
-            "rank": 9,
-            "value": "custom_data_ABA"
-        },
-        "ABF": {
-            "caption": "𝗦𝗧𝗬𝗟𝗘",
-            "editor": "Label",
-            "name": "style_section",
-            "rank": 17
-        },
-        "ABG": {
-            "caption": "Border Radius",
-            "default_val": 4,
-            "editor": "StaticNumber",
-            "in_style": true,
-            "name": "style_borderRadius",
-            "rank": 19,
-            "value": "number"
-        },
-        "ABH": {
-            "caption": "No option message",
-            "default_val": "",
-            "doc": "Message to show when there is no option. Add {inputValue} to be replaced with the value of the input.",
-            "editor": "DynamicValue",
-            "name": "noOptionMsg",
-            "optional": true,
-            "rank": 16,
-            "value": "text"
-        },
-        "ABI": {
-            "caption": "Disabled",
-            "default_val": false,
-            "editor": "Checkbox",
-            "name": "disabled",
-            "optional": true,
-            "rank": 11,
-            "value": "boolean"
-        },
-        "ABJ": {
-            "caption": "Max Menu Height",
-            "default_val": 250,
-            "doc": "Max dropdown menu height in pixel.",
-            "editor": "DynamicValue",
-            "name": "style_maxMenuHeight",
-            "optional": true,
-            "rank": 18,
-            "value": "number"
-        },
-        "ABK": {
-            "caption": "Hide Selected",
-            "default_val": false,
-            "doc": "Hide selected options from the dropdown",
-            "editor": "Checkbox",
-            "in_style": true,
-            "name": "hideSelected",
-            "optional": true,
-            "rank": 12,
-            "value": "boolean"
-        },
-        "ABL": {
-            "caption": "Primary Seed Color",
-            "default_val": "rgba(85,138,242,1)",
-            "doc": "Seed for the primary color swatch",
-            "editor": "Color",
-            "in_style": true,
-            "name": "style_primaryColor",
-            "rank": 20
-        },
-        "ABM": {
-            "caption": "Danger Seed Color",
-            "default_val": "rgba(200,0,0,1)",
-            "doc": "Seed for the danger color swatch",
-            "editor": "Color",
-            "in_style": true,
-            "name": "style_dangerColor",
-            "rank": 21
-        },
-        "ABN": {
-            "caption": "Neutral Seed Color",
-            "default_val": "rgba(24,24,24,1)",
-            "doc": "Seed for the neutral color swatch",
-            "editor": "Color",
-            "in_style": true,
-            "name": "style_neutralColor",
-            "rank": 22
-        },
-        "ABR": {
-            "caption": "Allow Create new Option",
-            "default_val": false,
-            "doc": "Allow creation of new Option",
-            "editor": "Checkbox",
-            "name": "allowCreate",
-            "rank": 13
-        },
-        "ABS": {
-            "caption": "Placeholder",
-            "doc": "This is the placeholder for the input element",
-            "editor": "DynamicValue",
-            "name": "placeholder",
-            "rank": 15,
-            "value": "text"
-        },
-        "ABW": {
-            "caption": "𝗖𝗢𝗡𝗙𝗜𝗚",
-            "editor": "Label",
-            "name": "config_section",
-            "rank": 10
-        },
-        "ABd": {
-            "caption": "𝗠𝗘𝗦𝗦𝗔𝗚𝗘𝗦",
-            "editor": "Label",
-            "name": "messages_info",
-            "rank": 14
-        },
-        "ABe": {
-            "caption": "Value as JSON",
-            "default_val": false,
-            "doc": "Only apply when \"Value Type\" is text. You need to provide Option as a list of JSON object formatted as string.",
-            "editor": "Checkbox",
-            "name": "valueAsJSON",
-            "rank": 3
-        },
-        "ABf": {
-            "caption": "JSON Label Field",
-            "doc": "Only apply if Value as JSON is true. Set the field in each JSON object to use as Label.",
-            "editor": "DynamicValue",
-            "name": "jsonLabelField",
-            "optional": true,
-            "rank": 5,
-            "value": "text"
-        },
-        "ABg": {
-            "caption": "JSON ID Field",
-            "doc": "Only apply if Value as JSON is true. Set the field in each JSON object to use as ID.",
-            "editor": "DynamicValue",
-            "name": "jsonIDField",
-            "rank": 6,
-            "value": "text"
-        },
-        "ABh": {
-            "caption": "If you use JSON value, note that the \"value\" state will be the ID of the option. However, the \"Default Value\" entry must also be a JSON formatted string for the default selection.",
-            "editor": "Label",
-            "name": "jsonValueNote",
-            "rank": 4
-        },
-        "ABi": {
-            "caption": "𝗧𝗬𝗣𝗘 & 𝗦𝗖𝗛𝗘𝗠𝗔",
-            "editor": "Label",
-            "name": "type_schema_section",
-            "rank": 0
-        },
-        "ABj": {
-            "caption": "𝗩𝗔𝗟𝗨𝗘",
-            "editor": "Label",
-            "name": "value_section",
-            "rank": 7
-        }
+    "AAy": {
+      "caption": "create new entry",
+      "name": "createNew"
+    }
+  },
+  "fields": {
+    "ABi": {
+      "caption": "𝗧𝗬𝗣𝗘 & 𝗦𝗖𝗛𝗘𝗠𝗔",
+      "editor": "Label",
+      "name": "type_schema_section",
+      "rank": 0
     },
-    "icon": "ion-android-arrow-dropdown-circle",
-    "property_applications": {
-        "Background": true,
-        "Border": true,
-        "BoxShadow": true,
-        "Font": true,
-        "MinWidth": true,
-        "Padding": true,
-        "resizable": true
+    "ABA": {
+      "caption": "Value Type",
+      "editor": "custom_type",
+      "name": "valueType",
+      "rank": 1
     },
-    "states": {
-        "ABO": {
-            "caption": "value",
-            "initialization_code": {
-                "fn": "function(properties, context) {\n\n\n\n}"
-            },
-            "is_list": false,
-            "name": "value",
-            "value": "custom_data_ABA"
-        },
-        "ABP": {
-            "caption": "input value",
-            "initialization_code": {
-                "fn": "function(properties, context) {\n\n\n\n}"
-            },
-            "name": "inputValue",
-            "value": "text"
-        }
+    "ABC": {
+      "caption": "Label Field",
+      "editor": "custom_field_ABA",
+      "field_type_restriction": "text_image_file",
+      "name": "labelField",
+      "rank": 2
     },
-    "support_autobinding": false
+    "ABe": {
+      "caption": "Value as JSON",
+      "default_val": false,
+      "doc": "Only apply when \"Value Type\" is text. You need to provide Option as a list of JSON object formatted as string.",
+      "editor": "Checkbox",
+      "name": "valueAsJSON",
+      "rank": 3
+    },
+    "ABh": {
+      "caption": "If you use JSON value, note that the \"value\" state will be the ID of the option. However, the \"Default Value\" entry must also be a JSON formatted string for the default selection.",
+      "editor": "Label",
+      "name": "jsonValueNote",
+      "rank": 4
+    },
+    "ABf": {
+      "caption": "JSON Label Field",
+      "doc": "Only apply if Value as JSON is true. Set the field in each JSON object to use as Label.",
+      "editor": "DynamicValue",
+      "name": "jsonLabelField",
+      "optional": true,
+      "rank": 5,
+      "value": "text"
+    },
+    "ABg": {
+      "caption": "JSON ID Field",
+      "doc": "Only apply if Value as JSON is true. Set the field in each JSON object to use as ID.",
+      "editor": "DynamicValue",
+      "name": "jsonIDField",
+      "rank": 6,
+      "value": "text"
+    },
+    "ABj": {
+      "caption": "𝗩𝗔𝗟𝗨𝗘",
+      "editor": "Label",
+      "name": "value_section",
+      "rank": 7
+    },
+    "ABB": {
+      "caption": "Options",
+      "editor": "DynamicValue",
+      "is_list": true,
+      "name": "options",
+      "rank": 8,
+      "value": "custom_data_ABA"
+    },
+    "ABE": {
+      "caption": "Default Value",
+      "doc": "Default value for the input",
+      "editor": "DynamicValue",
+      "is_list": false,
+      "name": "defaultValue",
+      "optional": true,
+      "rank": 9,
+      "value": "custom_data_ABA"
+    },
+    "ABW": {
+      "caption": "𝗖𝗢𝗡𝗙𝗜𝗚",
+      "editor": "Label",
+      "name": "config_section",
+      "rank": 10
+    },
+    "ABI": {
+      "caption": "Disabled",
+      "default_val": false,
+      "editor": "Checkbox",
+      "name": "disabled",
+      "optional": true,
+      "rank": 11,
+      "value": "boolean"
+    },
+    "ABK": {
+      "caption": "Hide Selected",
+      "default_val": false,
+      "doc": "Hide selected options from the dropdown",
+      "editor": "Checkbox",
+      "in_style": true,
+      "name": "hideSelected",
+      "optional": true,
+      "rank": 12,
+      "value": "boolean"
+    },
+    "ABR": {
+      "caption": "Allow Create new Option",
+      "default_val": false,
+      "doc": "Allow creation of new Option",
+      "editor": "Checkbox",
+      "name": "allowCreate",
+      "rank": 13
+    },
+    "ABd": {
+      "caption": "𝗠𝗘𝗦𝗦𝗔𝗚𝗘𝗦",
+      "editor": "Label",
+      "name": "messages_info",
+      "rank": 14
+    },
+    "ABS": {
+      "caption": "Placeholder",
+      "doc": "This is the placeholder for the input element",
+      "editor": "DynamicValue",
+      "name": "placeholder",
+      "rank": 15,
+      "value": "text"
+    },
+    "ABH": {
+      "caption": "No option message",
+      "default_val": "",
+      "doc": "Message to show when there is no option. Add {inputValue} to be replaced with the value of the input.",
+      "editor": "DynamicValue",
+      "name": "noOptionMsg",
+      "optional": true,
+      "rank": 16,
+      "value": "text"
+    },
+    "ABF": {
+      "caption": "𝗦𝗧𝗬𝗟𝗘",
+      "editor": "Label",
+      "name": "style_section",
+      "rank": 17
+    },
+    "ABJ": {
+      "caption": "Max Menu Height",
+      "default_val": 250,
+      "doc": "Max dropdown menu height in pixel.",
+      "editor": "DynamicValue",
+      "name": "style_maxMenuHeight",
+      "optional": true,
+      "rank": 18,
+      "value": "number"
+    },
+    "ABG": {
+      "caption": "Border Radius",
+      "default_val": 4,
+      "editor": "StaticNumber",
+      "in_style": true,
+      "name": "style_borderRadius",
+      "rank": 19,
+      "value": "number"
+    },
+    "ABL": {
+      "caption": "Primary Seed Color",
+      "default_val": "rgba(85,138,242,1)",
+      "doc": "Seed for the primary color swatch",
+      "editor": "Color",
+      "in_style": true,
+      "name": "style_primaryColor",
+      "rank": 20
+    },
+    "ABM": {
+      "caption": "Danger Seed Color",
+      "default_val": "rgba(200,0,0,1)",
+      "doc": "Seed for the danger color swatch",
+      "editor": "Color",
+      "in_style": true,
+      "name": "style_dangerColor",
+      "rank": 21
+    },
+    "ABN": {
+      "caption": "Neutral Seed Color",
+      "default_val": "rgba(24,24,24,1)",
+      "doc": "Seed for the neutral color swatch",
+      "editor": "Color",
+      "in_style": true,
+      "name": "style_neutralColor",
+      "rank": 22
+    }
+  },
+  "icon": "ion-android-arrow-dropdown-circle",
+  "property_applications": {
+    "Background": true,
+    "Border": true,
+    "BoxShadow": true,
+    "Font": true,
+    "MinWidth": true,
+    "Padding": true,
+    "resizable": true
+  },
+  "states": {
+    "ABO": {
+      "caption": "value",
+      "initialization_code": {
+        "fn": "function(properties, context) {\n\n\n\n}"
+      },
+      "is_list": false,
+      "name": "value",
+      "value": "custom_data_ABA"
+    },
+    "ABP": {
+      "caption": "input value",
+      "initialization_code": {
+        "fn": "function(properties, context) {\n\n\n\n}"
+      },
+      "name": "inputValue",
+      "value": "text"
+    }
+  },
+  "support_autobinding": false
 }
