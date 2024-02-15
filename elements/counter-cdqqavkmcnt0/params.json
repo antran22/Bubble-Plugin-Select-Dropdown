@@ -1,0 +1,240 @@
+{
+    "add_is_visible": true,
+    "can_fit_height": true,
+    "can_fit_width": true,
+    "category": "input forms",
+    "default_dim": {
+        "height": 40,
+        "width": 300
+    },
+    "display": "Multiselect",
+    "events": {
+        "AAZ": {
+            "caption": "value changed",
+            "name": "changed"
+        },
+        "AAa": {
+            "caption": "focused",
+            "name": "focused"
+        },
+        "AAp": {
+            "caption": "create new entry",
+            "name": "createNew"
+        }
+    },
+    "fields": {
+        "AAS": {
+            "caption": "Max Item Show",
+            "default_val": -1,
+            "editor": "DynamicValue",
+            "name": "maxItemShow",
+            "rank": 11,
+            "value": "number"
+        },
+        "AAT": {
+            "caption": "Value Type",
+            "editor": "custom_type",
+            "name": "valueType",
+            "rank": 1
+        },
+        "AAV": {
+            "caption": "Options",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "options",
+            "rank": 8,
+            "value": "custom_data_AAT"
+        },
+        "AAW": {
+            "caption": "Label Field",
+            "editor": "custom_field_AAT",
+            "field_type_restriction": "text_image_file",
+            "name": "labelField",
+            "rank": 2
+        },
+        "AAb": {
+            "caption": "Default Values",
+            "editor": "DynamicValue",
+            "is_list": true,
+            "name": "defaultValues",
+            "optional": true,
+            "rank": 9,
+            "value": "custom_data_AAT"
+        },
+        "AAc": {
+            "caption": "𝗦𝗧𝗬𝗟𝗘",
+            "editor": "Label",
+            "name": "style_caption",
+            "rank": 17
+        },
+        "AAe": {
+            "caption": "Border Radius",
+            "default_val": 4,
+            "editor": "StaticNumber",
+            "in_style": true,
+            "name": "style_borderRadius",
+            "rank": 19,
+            "value": "number"
+        },
+        "AAf": {
+            "caption": "No option message",
+            "default_val": "",
+            "doc": "Message to show when there is no option.",
+            "editor": "DynamicValue",
+            "name": "noOptionMsg",
+            "optional": true,
+            "rank": 15,
+            "value": "text"
+        },
+        "AAg": {
+            "caption": "Disabled",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "disabled",
+            "optional": true,
+            "rank": 16,
+            "value": "boolean"
+        },
+        "AAi": {
+            "caption": "Max Menu Height",
+            "default_val": 250,
+            "doc": "Max dropdown menu height in pixel.",
+            "editor": "DynamicValue",
+            "name": "style_maxMenuHeight",
+            "optional": true,
+            "rank": 18,
+            "value": "number"
+        },
+        "AAj": {
+            "caption": "Hide Selected",
+            "default_val": false,
+            "doc": "Hide selected options from the dropdown",
+            "editor": "Checkbox",
+            "in_style": true,
+            "name": "hideSelected",
+            "optional": true,
+            "rank": 13,
+            "value": "boolean"
+        },
+        "AAt": {
+            "caption": "Primary Seed Color",
+            "default_val": "rgba(85,138,242,1)",
+            "doc": "Seed for the primary color swatch",
+            "editor": "Color",
+            "in_style": true,
+            "name": "style_primaryColor",
+            "rank": 20
+        },
+        "AAu": {
+            "caption": "Danger Seed Color",
+            "default_val": "rgba(200,0,0,1)",
+            "doc": "Seed for the danger color swatch",
+            "editor": "Color",
+            "in_style": true,
+            "name": "style_dangerColor",
+            "rank": 21
+        },
+        "AAv": {
+            "caption": "Neutral Color",
+            "default_val": "rgba(24,24,24,1)",
+            "doc": "Seed for the neutral color swatch",
+            "editor": "Color",
+            "in_style": true,
+            "name": "style_neutralColor",
+            "rank": 22
+        },
+        "ABT": {
+            "caption": "Placeholder",
+            "editor": "DynamicValue",
+            "name": "placeholder",
+            "optional": true,
+            "rank": 14,
+            "value": "text"
+        },
+        "ABV": {
+            "caption": "Allow Create new option",
+            "default_val": false,
+            "editor": "Checkbox",
+            "name": "allowCreate",
+            "rank": 12
+        },
+        "ABk": {
+            "caption": "𝗧𝗬𝗣𝗘 & 𝗦𝗖𝗛𝗘𝗠𝗔",
+            "editor": "Label",
+            "name": "type_schema_section",
+            "rank": 0
+        },
+        "ABl": {
+            "caption": "𝗖𝗢𝗡𝗙𝗜𝗚",
+            "editor": "Label",
+            "name": "config",
+            "rank": 10
+        },
+        "ABm": {
+            "caption": "𝗩𝗔𝗟𝗨𝗘",
+            "editor": "Label",
+            "name": "value_section",
+            "rank": 7
+        },
+        "ABn": {
+            "caption": "Value As JSON",
+            "default_val": false,
+            "doc": "Only apply when \"Value Type\" is text. You need to provide Option as a list of JSON object formatted as string.",
+            "editor": "Checkbox",
+            "name": "valueAsJSON",
+            "rank": 3
+        },
+        "ABo": {
+            "caption": "If you use JSON value, note that the \"values\" state will be the IDs of the selected options. However, the \"Default Values\" entry must also be a list of JSON formatted string for the default selection.",
+            "editor": "Label",
+            "name": "jsonValueNote",
+            "rank": 4
+        },
+        "ABp": {
+            "caption": "JSON Label Field",
+            "doc": "Only apply if Value as JSON is true. Set the field in each JSON object to use as Label.",
+            "editor": "DynamicValue",
+            "name": "jsonLabelField",
+            "rank": 6,
+            "value": "text"
+        },
+        "ABq": {
+            "caption": "JSON ID Field",
+            "doc": "Only apply if Value as JSON is true. Set the field in each JSON object to use as ID.",
+            "editor": "DynamicValue",
+            "name": "jsonIDField",
+            "rank": 5,
+            "value": "text"
+        }
+    },
+    "icon": "ion-android-arrow-dropdown-circle",
+    "property_applications": {
+        "Background": true,
+        "Border": true,
+        "BoxShadow": true,
+        "Font": true,
+        "MinWidth": true,
+        "Padding": true,
+        "resizable": true
+    },
+    "states": {
+        "AAY": {
+            "caption": "values",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "is_list": true,
+            "name": "values",
+            "value": "custom_data_AAT"
+        },
+        "AAq": {
+            "caption": "input value",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "inputValue",
+            "value": "text"
+        }
+    },
+    "support_autobinding": false
+}

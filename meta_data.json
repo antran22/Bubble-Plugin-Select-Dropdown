@@ -1,0 +1,12 @@
+{
+    "categories": {
+        "0": "media",
+        "1": "data (things)",
+        "2": "technical"
+    },
+    "demo_page": "https://plugin.citizendev.io",
+    "description": "Customizable Single & Multi-select Dropdown.\nThis element is experimental and not yet stable. We are looking for some way to circumvent limitations of Bubble on defining and configuring elements.",
+    "image": "//meta-l.cdn.bubble.io/f1697426508264x135955585503213300/citizendev-logo.png",
+    "license": "open_source",
+    "name": "✳️ Select Dropdown"
+}
